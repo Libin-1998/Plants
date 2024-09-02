@@ -40,9 +40,7 @@ app.get('/',(req,res)=>{
 })
 
 
-app.listen(1001,()=>{
-    console.log('Running on',process
-        .env.PORT
-    );
+app.listen(process.env.PORT,()=>{
+    console.log('Running on',process.env.PORT);
     
 })

@@ -1,0 +1,37 @@
+.blogadd{
+    width: 50%;
+}
+.addblogpage{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-image: url(../../../public/images/Regbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.addblogh1{
+    text-align: center;
+}
+.addblogbutton{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.blogadd{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+.buttonblog{
+    padding: 5px 15px 5px 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    background-color: green;
+}
+.inputblog{
+    opacity: 50%;
+}

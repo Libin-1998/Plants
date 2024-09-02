@@ -1,6 +1,8 @@
 var express=require('express')
 var mongoose=require('mongoose')
 const cors=require('cors')
+const dotenv=require('dotenv')
+
 const AuthRoutes = require('./Routes/AuthRoutes')
 const BlogRoutes = require('./Routes/BlogRoutes')
 const PlantRoutes = require('./Routes/PlantRoutes')
@@ -8,11 +10,12 @@ const PlantRoutes = require('./Routes/PlantRoutes')
 
 var app=express()
 
+dotenv.config()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors())
 
-mongoose.connect('mongodb+srv://libinninteen98:EhF3Fs510HyhC9cd@cluster0.4e1hgmr.mongodb.net/plants?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
     console.log('database connected');
     
@@ -38,6 +41,8 @@ app.get('/',(req,res)=>{
 
 
 app.listen(1001,()=>{
-    console.log('Running on',1001);
+    console.log('Running on',process
+        .env.PORT
+    );
     
 })

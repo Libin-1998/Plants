@@ -1,0 +1,16 @@
+.nav-link{
+    color: white;
+}
+.navpage{
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    font-weight: bolder;
+    font-size: larger;
+    background-color: #397B56;
+}
+.navbar-brand{
+    margin-right: 50px;
+}
+.navbar{
+    padding: 0%;
+}

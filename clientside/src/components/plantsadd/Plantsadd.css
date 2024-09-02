@@ -1,0 +1,38 @@
+.plantsadd{
+    width: 50%;
+}
+.plantsaddpage{
+    display: flex;
+    justify-content: center;
+    background-image: url(../../../public/images/addplantbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+.plantsaddh1{
+    text-align: center;
+}
+.plantsaddbutton{
+    text-align: center;
+    color: white;
+}
+.plantsadd{
+    color: white;
+}
+.plantaddinput{
+    opacity: 50%;
+
+}
+.plantforms{
+    font-weight: bold;
+    font-size: large;
+}
+.buttonplant{
+    padding: 5px 15px 5px 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    background-color: green;
+}

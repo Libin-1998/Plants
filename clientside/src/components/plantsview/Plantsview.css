@@ -1,5 +1,5 @@
 .plantsviewpage{
-    padding: 30px;
+    padding: 30px 30px 60px 30px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -126,3 +126,4 @@
           line-clamp: 9;
   -webkit-box-orient: vertical;
 }
+

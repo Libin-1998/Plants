@@ -50,7 +50,6 @@ export default function Plantsview() {
   return (
     <>
       <ToastContainer/>
-
     <div className='plantsviewpage'>
         {data.map((datas)=>(
 <div class="flip-card">

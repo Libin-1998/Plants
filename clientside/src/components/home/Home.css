@@ -84,6 +84,8 @@ text-align: center;
 
 .third{
     padding-top: 30px;
+    display: flex;
+
 }
 
 
@@ -101,6 +103,11 @@ text-align: center;
   border: none;
   background: none;
   cursor: pointer;
+  text-align: center;
+}
+.thirdviewmore{
+  margin: auto;
+  padding-top: 60px;
 }
 
 .cta span {
@@ -146,6 +153,15 @@ text-align: center;
 .cta:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.thirdimgcol{
+  text-align: center;
+}
+
+@media(max-width:721px){
+  .thirdtext{
+    width: 100%;
+  }
 }
 
 

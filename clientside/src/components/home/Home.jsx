@@ -51,9 +51,9 @@ export default function Home() {
       </Container>
 
       <div className="third">
-        <Container fluid style={{ display: "flex", flexWrap: "wrap" }}>
+        <Container fluid >
           <Row>
-            <Col style={{ textAlign: "center" }} className="thirdimgcol">
+            <Col className="thirdimgcol">
               <img
                 src="/images/whitethird.jpeg"
                 alt=""
@@ -63,15 +63,29 @@ export default function Home() {
               />
             </Col>
             <Col className="thirdtext">
-              <p>
+              <p className="hi">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Doloremque mollitia ut quisquam alias facilis animi rerum quis
                 facere, aliquid porro a quam minus voluptate sit sed neque
                 laborum non optio!
               </p>
-              <div className="" style={{ textAlign: "center", paddingTop:'20px'}}>
               
-<button class="cta">
+
+
+            </Col>
+            <Col className="thirdimgcol">
+              <img
+                src="/images/homeplant4.jpeg"
+                alt=""
+                className="fouthimage"
+                height={"300px"}
+                width={"250px"}
+              />
+            </Col>
+          </Row>
+          <Row className="thirdviewmore">
+
+          <button class="cta">
   <span class="hover-underline-animation"> View More </span>
   <svg
     id="arrow-horizontal"
@@ -88,19 +102,8 @@ export default function Home() {
     ></path>
   </svg>
 </button>
+</Row>
 
-              </div>
-            </Col>
-            <Col>
-              <img
-                src="/images/homeplant4.jpeg"
-                alt=""
-                className="fouthimage"
-                height={"300px"}
-                width={"250px"}
-              />
-            </Col>
-          </Row>
         </Container>
       </div>
 

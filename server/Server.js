@@ -35,9 +35,9 @@ app.use((err,req,res,next)=>{
     res.status(500).send('something broke!')
 })
 
-app.get('/',(req,res)=>{
-    res.send('server is on')
-})
+// app.get('/',(req,res)=>{
+//     res.send('server is on')
+// })
 
 
 app.listen(process.env.PORT,()=>{

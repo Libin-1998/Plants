@@ -18,7 +18,7 @@ export default function Register() {
   
 const handleSubmit=(event)=>{
 event.preventDefault()
-axios.post('http://localhost:1001/api/auths/register',data)
+axios.post('https://plants-96s1.onrender.com/api/auths/register',data)
 .then((response)=>{
   console.log(response);
 toast.success(response.data.message)

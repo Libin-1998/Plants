@@ -11,7 +11,7 @@ const token=sessionStorage.getItem('token')
 export const postData=createAsyncThunk('blogs/post',async(item)=>{
     console.log(item);
 
-    const datas = await axios.post('http://localhost:1001/api/blogs/addblog',item, {
+    const datas = await axios.post('https://plants-96s1.onrender.com/api/blogs/addblog',item, {
         headers: {Authorization:`Bearer ${token}`},
     });
     

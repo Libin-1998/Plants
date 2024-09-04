@@ -19,7 +19,7 @@ export default function Editplants() {
     })
     
     useEffect(()=>{
-        axios.get(`http://localhost:1001/api/plants/singleplant/${id}`)
+        axios.get(`https://plants-96s1.onrender.com/api/plants/singleplant/${id}`)
         .then((response)=>{
             console.log(response);
             setItem(response.data.data)
@@ -52,7 +52,7 @@ export default function Editplants() {
         formdata.append('description',item.description)
         formdata.append('image',item.image)
 
-        axios.put(`http://localhost:1001/api/plants/updateplant/${id}`,formdata,{
+        axios.put(`https://plants-96s1.onrender.com/api/plants/updateplant/${id}`,formdata,{
             headers:{Authorization:`Bearer ${token}`},
         })
         .then((response)=>{

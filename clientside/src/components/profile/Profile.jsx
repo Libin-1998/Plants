@@ -13,7 +13,7 @@ export default function Profile() {
   const[data,Setdata]=useState({})
 
   useEffect(()=>{
-    axios.get(`http://localhost:1001/api/auths/profile/${id}`)
+    axios.get(`https://plants-96s1.onrender.com/api/auths/profile/${id}`)
     .then((response)=>{
       console.log(response);
       Setdata(response.data.data[0])

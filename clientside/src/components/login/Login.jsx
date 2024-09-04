@@ -21,7 +21,7 @@ export default function Login() {
 
   const handleSubmit=(event)=>{
     event.preventDefault()
-    axios.post('http://localhost:1001/api/auths/login',data)
+    axios.post('https://plants-96s1.onrender.com/api/auths/login',data)
     .then((response)=>{
       console.log(response);
       toast.success(response.data.message)

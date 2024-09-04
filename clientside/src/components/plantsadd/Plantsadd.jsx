@@ -30,7 +30,7 @@ const navigate=useNavigate()
       formdata.append('type',item.type)
       formdata.append('description',item.description)
       formdata.append('image',item.image)
-  axios.post('http://localhost:1001/api/plants/plantadd',formdata,{
+  axios.post('https://plants-96s1.onrender.com/api/plants/plantadd',formdata,{
     headers:{Authorization:`Bearer ${token}`},
   })
   .then((response)=>{

@@ -9,7 +9,7 @@ export default function Viewblog() {
   const token=sessionStorage.getItem('token')
 
 useEffect(()=>{
-  axios.get('http://localhost:1001/api/blogs/viewblog',{
+  axios.get('https://plants-96s1.onrender.com/api/blogs/viewblog',{
     headers:{Authorization:`Bearer ${token}`}
   })
   .then((response)=>{

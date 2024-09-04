@@ -12,7 +12,7 @@ export default function Plantsview() {
     
 
     useEffect(()=>{
-        axios.get('http://localhost:1001/api/plants/viewplant',{
+        axios.get('https://plants-96s1.onrender.com/api/plants/viewplant',{
             headers:{Authorization:`Bearer ${token}`},
         })
         .then((response)=>{
@@ -28,7 +28,7 @@ export default function Plantsview() {
     const deleteButton=(id)=>{
       console.log(id);
       
-      axios.delete(`http://localhost:1001/api/plants/deleteplant/${id}`)
+      axios.delete(`https://plants-96s1.onrender.com/api/plants/deleteplant/${id}`)
       .then((response)=>{
         console.log(response);
         toast.success(response.data.message)

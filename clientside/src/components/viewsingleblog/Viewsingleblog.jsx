@@ -12,7 +12,7 @@ export default function Viewsingleblog() {
     
 
     useEffect(()=>{
-        axios.get(`http://localhost:1001/api/blogs/singleviewblog/${id}`)
+        axios.get(`https://plants-96s1.onrender.com/api/blogs/singleviewblog/${id}`)
         .then((response)=>{
             console.log(response);
             Setdata(response.data.data)

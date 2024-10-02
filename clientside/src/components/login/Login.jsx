@@ -56,13 +56,13 @@ const navigate=useNavigate()
 
  <div class="loginform-container">
       <p class="logintitle">Welcome back</p>
-      <form class="loginform">
+      <form class="loginform" onSubmit={handleSubmit}>
         <input type="email" class="logininput" placeholder="Email" onChange={inputChange} name='email'/>
         <input type="password" class="logininput" placeholder="Password" onChange={inputChange} name='password'/>
         <p class="loginpage-link">
           <span class="loginpage-link-label">Forgot Password?</span>
         </p>
-        <button class="loginform-btn" onClick={handleSubmit}>Log in</button>
+        <button class="loginform-btn" type='submit'>Log in</button>
       </form>
       <p class="loginsign-up-label">
         Don't have an account?<span class="loginsign-up-link">Sign up</span>

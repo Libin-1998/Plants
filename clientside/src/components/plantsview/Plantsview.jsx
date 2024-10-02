@@ -3,6 +3,8 @@ import'./Plantsview.css'
 import axios from 'axios'
 import { toast, ToastContainer } from 'react-toastify'
 import { Link } from 'react-router-dom'
+import RingLoader from 'react-spinners/SyncLoader'
+
 
 export default function Plantsview() {
 
@@ -50,6 +52,23 @@ export default function Plantsview() {
   return (
     <>
       <ToastContainer/>
+      {data.length==0?(<>
+        <div
+            className=""
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "80vh",
+            }}
+          >
+            <RingLoader
+  color="#68dcd6"
+  size={20}
+  speedMultiplier={1}
+/>
+          </div>
+      </>):(<>
     <div className='plantsviewpage'>
         {data.map((datas)=>(
 <div class="flip-card">
@@ -95,6 +114,7 @@ export default function Plantsview() {
 ))}
 
     </div>
+    </>)}
     </>
   )
 }
